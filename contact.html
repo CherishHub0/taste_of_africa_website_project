@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Taste of Africa</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container nav-bar">
+      <a href="index.html" class="logo">Taste of Africa</a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li class="dropdown">
+            <a href="west-africa.html">Regions &#9662;</a>
+            <ul class="dropdown-menu">
+            <li><a href="west-africa.html">West Africa</a></li>
+            <li><a href="north-africa.html">North Africa</a></li>
+            <li><a href="east-africa.html">East Africa</a></li>
+            <li><a href="southern-africa.html">Southern Africa</a></li>
+            </ul>
+          </li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><button id="dark-btn" type="button">Dark mode</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-title">
+      <div class="container">
+        <h1>Contact Us</h1>
+        <p>Got a question or a recipe to share? Send us a message.</p>
+      </div>
+    </div>
+
+    <section>
+      <div class="container">
+        <div class="form-box">
+          <form id="contact-form">
+            <div class="form-row">
+              <label for="name">Name</label>
+              <input type="text" id="name" required>
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input type="email" id="email" required>
+            </div>
+            <div class="form-row">
+              <label for="country">Country</label>
+              <input type="text" id="country" list="countries" placeholder="Start typing...">
+              <datalist id="countries">
+          <option value="Algeria">
+          <option value="Egypt">
+          <option value="Ethiopia">
+          <option value="Ghana">
+          <option value="Kenya">
+          <option value="Morocco">
+          <option value="Nigeria">
+          <option value="Rwanda">
+          <option value="Senegal">
+          <option value="South Africa">
+          <option value="Tanzania">
+          <option value="Uganda">
+          <option value="United Kingdom">
+          <option value="United States">
+              </datalist>
+            </div>
+            <div class="form-row">
+              <label for="region">Favorite region</label>
+              <select id="region">
+                <option value="">Choose a region</option>
+                <option>West Africa</option>
+                <option>North Africa</option>
+                <option>East Africa</option>
+                <option>Southern Africa</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <label for="message">Message</label>
+              <textarea id="message" required></textarea>
+              <p id="error-text" class="error"></p>
+            </div>
+            <button type="submit" class="btn">Send message</button>
+          </form>
+          <p id="thanks" class="thanks hidden"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <h3>Taste of Africa</h3>
+        <p>Celebrating the food, spices and stories of Africa.</p>
+      </div>
+      <div>
+        <h3>Links</h3>
+        <p><a href="recipes.html">Recipes</a><br><a href="about.html">About us</a><br><a href="contact.html">Contact</a></p>
+      </div>
+      <div>
+        <h3>Newsletter</h3>
+        <form id="newsletter-form" class="newsletter">
+          <label for="newsletter-email" style="display:none">Email</label>
+          <input type="email" id="newsletter-email" placeholder="Your email" required>
+          <button type="submit" class="btn">Join</button>
+        </form>
+        <p id="newsletter-message"></p>
+      </div>
+    </div>
+    <p class="copyright">&copy; 2026 Taste of Africa - a student project</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

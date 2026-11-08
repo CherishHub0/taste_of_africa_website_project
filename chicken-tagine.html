@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chicken Tagine | Taste of Africa</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container nav-bar">
+      <a href="index.html" class="logo">Taste of Africa</a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li class="dropdown">
+            <a href="west-africa.html">Regions &#9662;</a>
+            <ul class="dropdown-menu">
+            <li><a href="west-africa.html">West Africa</a></li>
+            <li><a href="north-africa.html">North Africa</a></li>
+            <li><a href="east-africa.html">East Africa</a></li>
+            <li><a href="southern-africa.html">Southern Africa</a></li>
+            </ul>
+          </li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><button id="dark-btn" type="button">Dark mode</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-title">
+      <div class="container">
+        <h1>Chicken Tagine</h1>
+        <p>Morocco - <a href="north-africa.html">North Africa</a></p>
+      </div>
+    </div>
+
+    <section>
+      <div class="container two-columns">
+        <figure style="margin:0">
+          <img src="https://loremflickr.com/800/600/tagine,morocco?lock=22" alt="A plate of Chicken Tagine" class="recipe-img">
+          <figcaption>Photo: Chicken Tagine</figcaption>
+        </figure>
+        <div>
+          <h2>About this dish</h2>
+          <p>A tagine is both the dish and the clay pot it is cooked in. Moroccan cooks use <mark>saffron, ginger, turmeric and cumin</mark> together with salty <mark>preserved lemon</mark> to make a sauce that is soft, tangy and full of flavor. It is eaten with bread.</p>
+          <button type="button" class="fav-btn" data-id="chicken-tagine">🤍 Favorite</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-soft">
+      <div class="container two-columns">
+        <div class="box">
+          <h2>Ingredients</h2>
+          <div class="servings">
+            <button type="button" id="minus">-</button>
+            <span id="servings-text">4 servings</span>
+            <button type="button" id="plus">+</button>
+          </div>
+          <ul class="ingredients">
+            <li><span class="amount" data-amount="8">8</span> chicken thighs</li>
+            <li><span class="amount" data-amount="2">2</span> onions, sliced</li>
+            <li><span class="amount" data-amount="4">4</span> cloves garlic</li>
+            <li><span class="amount" data-amount="1">1</span> tsp ground ginger</li>
+            <li><span class="amount" data-amount="1">1</span> tsp turmeric</li>
+            <li><span class="amount" data-amount="1">1</span> tsp ground cumin</li>
+            <li><span class="amount" data-amount="1">1</span> tsp paprika</li>
+            <li><span class="amount" data-amount="1">1</span> pinch saffron</li>
+            <li><span class="amount" data-amount="1">1</span> preserved lemon</li>
+            <li><span class="amount" data-amount="1">1</span> cup green olives</li>
+            <li><span class="amount" data-amount="3">3</span> tbsp olive oil</li>
+            <li><span class="amount" data-amount="1.5">1.5</span> cups chicken stock</li>
+            <li><span class="amount" data-amount="0.5">0.5</span> cup fresh cilantro</li>
+            <li>Salt to taste</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Cooking instructions</h2>
+          <details>
+            <summary>Step 1: Preparation</summary>
+            <ol>
+              <li>Mix the spices with salt and pepper and rub them on the chicken. Leave for 30 minutes.</li>
+              <li>Slice the onions, crush the garlic and cut the preserved lemon into quarters.</li>
+            </ol>
+          </details>
+          <details>
+            <summary>Step 2: Cooking</summary>
+            <ol>
+              <li>Brown the chicken in olive oil in a heavy pot, then take it out.</li>
+              <li>Cook the onions and garlic in the same pot until soft.</li>
+              <li>Put the chicken back, add the stock and saffron, cover and simmer for 40 minutes.</li>
+              <li>Add the lemon and olives and cook without the lid for 15 minutes.</li>
+              <li>Sprinkle with cilantro and serve with bread or couscous.</li>
+            </ol>
+          </details>
+          <div class="box">
+            <table>
+              <caption><strong>Nutrition facts (approximate, per serving)</strong></caption>
+              <thead>
+                <tr><th>Nutrient</th><th>Amount</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Calories</td><td>480 kcal</td></tr>
+                <tr><td>Protein</td><td>38 g</td></tr>
+                <tr><td>Carbohydrates</td><td>12 g</td></tr>
+                <tr><td>Fat</td><td>30 g</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container two-columns">
+        <div>
+          <h2>Video tutorial</h2>
+          <div class="video-box">
+          <iframe src="https://www.youtube.com/embed/VIDEO_ID_TAGINE" title="How to cook Chicken Tagine" allowfullscreen></iframe>
+        </div>
+        </div>
+        <div>
+          <h2>Where it comes from: Morocco</h2>
+          <div class="map-box">
+          <iframe src="https://www.google.com/maps?q=Morocco&output=embed" title="Map of Morocco"></iframe>
+        </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <h3>Taste of Africa</h3>
+        <p>Celebrating the food, spices and stories of Africa.</p>
+      </div>
+      <div>
+        <h3>Links</h3>
+        <p><a href="recipes.html">Recipes</a><br><a href="about.html">About us</a><br><a href="contact.html">Contact</a></p>
+      </div>
+      <div>
+        <h3>Newsletter</h3>
+        <form id="newsletter-form" class="newsletter">
+          <label for="newsletter-email" style="display:none">Email</label>
+          <input type="email" id="newsletter-email" placeholder="Your email" required>
+          <button type="submit" class="btn">Join</button>
+        </form>
+        <p id="newsletter-message"></p>
+      </div>
+    </div>
+    <p class="copyright">&copy; 2026 Taste of Africa - a student project</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

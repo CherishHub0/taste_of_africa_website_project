@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>East Africa | Taste of Africa</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container nav-bar">
+      <a href="index.html" class="logo">Taste of Africa</a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li class="dropdown">
+            <a href="west-africa.html">Regions &#9662;</a>
+            <ul class="dropdown-menu">
+            <li><a href="west-africa.html">West Africa</a></li>
+            <li><a href="north-africa.html">North Africa</a></li>
+            <li><a href="east-africa.html">East Africa</a></li>
+            <li><a href="southern-africa.html">Southern Africa</a></li>
+            </ul>
+          </li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><button id="dark-btn" type="button">Dark mode</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-title">
+      <div class="container">
+        <h1>East Africa</h1>
+        <p>Shared platters, fermented breads and coastal spices.</p>
+      </div>
+    </div>
+
+    <section>
+      <div class="container two-columns">
+        <div>
+          <h2>Food culture</h2>
+          <p>From the Ethiopian highlands to the hills of Rwanda, East African food uses ancient grains, beans, leafy greens and warm spices.</p>
+          <h3>Staples and flavors</h3>
+          <ul>
+          <li><mark>Teff</mark>, maize, sorghum and millet</li>
+          <li>Beans, lentils and greens like cassava leaves</li>
+          <li><mark>Berbere</mark> spice, cardamom and cloves</li>
+          <li>Plantains and sweet potatoes</li>
+          </ul>
+          <h3>Cooking techniques</h3>
+          <ul>
+          <li>Fermenting batter to make injera</li>
+          <li>Cooking maize flour into ugali</li>
+          <li>Slow stews called <mark>wat</mark></li>
+          <li>Grilling meat over charcoal (nyama choma)</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Watch</h2>
+          <div class="video-box">
+          <iframe src="https://www.youtube.com/embed/VIDEO_ID_INJERA" title="Cooking from East Africa" allowfullscreen></iframe>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-soft">
+      <div class="container">
+        <h2>Example dishes</h2>
+        <div class="grid">
+        <article class="card recipe-card" data-region="east-africa" data-id="injera">
+          <figure>
+            <img src="https://loremflickr.com/800/600/injera,ethiopian,food?lock=23" alt="Injera from Ethiopia">
+            <figcaption>Injera - Ethiopia</figcaption>
+          </figure>
+          <div class="card-body">
+            <p>Soft, tangy flatbread that works as the plate and the spoon.</p>
+            <div class="card-buttons">
+              <a href="injera.html" class="btn small-btn">View recipe</a>
+              <button type="button" class="fav-btn" data-id="injera">🤍 Favorite</button>
+            </div>
+          </div>
+        </article>
+        <article class="card recipe-card" data-region="east-africa" data-id="isombe">
+          <figure>
+            <img src="https://loremflickr.com/800/600/cassava,leaves,stew?lock=25" alt="Isombe from Rwanda">
+            <figcaption>Isombe - Rwanda</figcaption>
+          </figure>
+          <div class="card-body">
+            <p>Rwandan stew made with cassava leaves and peanut sauce.</p>
+            <div class="card-buttons">
+              <a href="isombe.html" class="btn small-btn">View recipe</a>
+              <button type="button" class="fav-btn" data-id="isombe">🤍 Favorite</button>
+            </div>
+          </div>
+        </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <h3>Taste of Africa</h3>
+        <p>Celebrating the food, spices and stories of Africa.</p>
+      </div>
+      <div>
+        <h3>Links</h3>
+        <p><a href="recipes.html">Recipes</a><br><a href="about.html">About us</a><br><a href="contact.html">Contact</a></p>
+      </div>
+      <div>
+        <h3>Newsletter</h3>
+        <form id="newsletter-form" class="newsletter">
+          <label for="newsletter-email" style="display:none">Email</label>
+          <input type="email" id="newsletter-email" placeholder="Your email" required>
+          <button type="submit" class="btn">Join</button>
+        </form>
+        <p id="newsletter-message"></p>
+      </div>
+    </div>
+    <p class="copyright">&copy; 2026 Taste of Africa - a student project</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

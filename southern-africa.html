@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Southern Africa | Taste of Africa</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container nav-bar">
+      <a href="index.html" class="logo">Taste of Africa</a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li class="dropdown">
+            <a href="west-africa.html">Regions &#9662;</a>
+            <ul class="dropdown-menu">
+            <li><a href="west-africa.html">West Africa</a></li>
+            <li><a href="north-africa.html">North Africa</a></li>
+            <li><a href="east-africa.html">East Africa</a></li>
+            <li><a href="southern-africa.html">Southern Africa</a></li>
+            </ul>
+          </li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><button id="dark-btn" type="button">Dark mode</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-title">
+      <div class="container">
+        <h1>Southern Africa</h1>
+        <p>Braai fires, curries and hearty maize porridge.</p>
+      </div>
+    </div>
+
+    <section>
+      <div class="container two-columns">
+        <div>
+          <h2>Food culture</h2>
+          <p>Southern African cooking mixes local traditions with Dutch, Malay and Indian influences, giving us curries, grilled meat and warm stews.</p>
+          <h3>Staples and flavors</h3>
+          <ul>
+          <li>Maize meal (pap or sadza)</li>
+          <li>Beef, lamb and dried meat called biltong</li>
+          <li><mark>Curry masala</mark> and turmeric</li>
+          <li>Pumpkin and root vegetables</li>
+          </ul>
+          <h3>Cooking techniques</h3>
+          <ul>
+          <li>Cooking over open coals, the <mark>braai</mark></li>
+          <li>Slow stews in cast-iron pots (potjie)</li>
+          <li>Drying meat into biltong</li>
+          <li>Baking spiced puddings</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Watch</h2>
+          <div class="video-box">
+          <iframe src="https://www.youtube.com/embed/wuWNkFNZrUU" title="Cooking from Southern Africa" allowfullscreen></iframe>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-soft">
+      <div class="container">
+        <h2>Example dishes</h2>
+        <div class="grid">
+        <article class="card recipe-card" data-region="southern-africa" data-id="bunny-chow">
+          <figure>
+            <img src="https://loremflickr.com/800/600/curry,bread?lock=24" alt="Bunny Chow from South Africa">
+            <figcaption>Bunny Chow - South Africa</figcaption>
+          </figure>
+          <div class="card-body">
+            <p>A Durban curry served inside a hollowed-out loaf of bread.</p>
+            <div class="card-buttons">
+              <a href="bunny-chow.html" class="btn small-btn">View recipe</a>
+              <button type="button" class="fav-btn" data-id="bunny-chow">🤍 Favorite</button>
+            </div>
+          </div>
+        </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <h3>Taste of Africa</h3>
+        <p>Celebrating the food, spices and stories of Africa.</p>
+      </div>
+      <div>
+        <h3>Links</h3>
+        <p><a href="recipes.html">Recipes</a><br><a href="about.html">About us</a><br><a href="contact.html">Contact</a></p>
+      </div>
+      <div>
+        <h3>Newsletter</h3>
+        <form id="newsletter-form" class="newsletter">
+          <label for="newsletter-email" style="display:none">Email</label>
+          <input type="email" id="newsletter-email" placeholder="Your email" required>
+          <button type="submit" class="btn">Join</button>
+        </form>
+        <p id="newsletter-message"></p>
+      </div>
+    </div>
+    <p class="copyright">&copy; 2026 Taste of Africa - a student project</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

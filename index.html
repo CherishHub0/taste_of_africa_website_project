@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Taste of Africa</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container nav-bar">
+      <a href="index.html" class="logo">Taste of Africa</a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li class="dropdown">
+            <a href="west-africa.html">Regions &#9662;</a>
+            <ul class="dropdown-menu">
+            <li><a href="west-africa.html">West Africa</a></li>
+            <li><a href="north-africa.html">North Africa</a></li>
+            <li><a href="east-africa.html">East Africa</a></li>
+            <li><a href="southern-africa.html">Southern Africa</a></li>
+            </ul>
+          </li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><button id="dark-btn" type="button">Dark mode</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <div>
+          <h1>Discover the <mark>flavors</mark> of Africa</h1>
+          <p>From smoky jollof rice to tangy injera, explore the recipes, spices and stories from a continent with 54 countries and thousands of food traditions.</p>
+          <a href="recipes.html" class="btn">Explore recipes</a>
+          <a href="about.html" class="btn btn-light">Our story</a>
+        </div>
+        <div class="video-box">
+          <iframe src="https://www.youtube.com/embed/VIDEO_ID_INTRO" title="Introduction to African food culture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>Featured Dishes</h2>
+        <p class="subtitle">Four signature dishes to start your journey. Click the heart to save a recipe for later.</p>
+        <div class="grid">
+        <article class="card recipe-card" data-region="west-africa" data-id="jollof-rice">
+          <figure>
+            <img src="https://loremflickr.com/800/600/jollof,rice?lock=21" alt="Jollof Rice from Nigeria">
+            <figcaption>Jollof Rice - Nigeria</figcaption>
+          </figure>
+          <div class="card-body">
+            <p>Smoky tomato rice that West Africans love to argue about.</p>
+            <div class="card-buttons">
+              <a href="jollof-rice.html" class="btn small-btn">View recipe</a>
+              <button type="button" class="fav-btn" data-id="jollof-rice">🤍 Favorite</button>
+            </div>
+          </div>
+        </article>
+        <article class="card recipe-card" data-region="north-africa" data-id="chicken-tagine">
+          <figure>
+            <img src="https://loremflickr.com/800/600/tagine,morocco?lock=22" alt="Chicken Tagine from Morocco">
+            <figcaption>Chicken Tagine - Morocco</figcaption>
+          </figure>
+          <div class="card-body">
+            <p>Slow-cooked chicken with preserved lemon, olives and warm spices.</p>
+            <div class="card-buttons">
+              <a href="chicken-tagine.html" class="btn small-btn">View recipe</a>
+              <button type="button" class="fav-btn" data-id="chicken-tagine">🤍 Favorite</button>
+            </div>
+          </div>
+        </article>
+        <article class="card recipe-card" data-region="east-africa" data-id="injera">
+          <figure>
+            <img src="https://loremflickr.com/800/600/injera,ethiopian,food?lock=23" alt="Injera from Ethiopia">
+            <figcaption>Injera - Ethiopia</figcaption>
+          </figure>
+          <div class="card-body">
+            <p>Soft, tangy flatbread that works as the plate and the spoon.</p>
+            <div class="card-buttons">
+              <a href="injera.html" class="btn small-btn">View recipe</a>
+              <button type="button" class="fav-btn" data-id="injera">🤍 Favorite</button>
+            </div>
+          </div>
+        </article>
+        <article class="card recipe-card" data-region="southern-africa" data-id="bunny-chow">
+          <figure>
+            <img src="https://loremflickr.com/800/600/curry,bread?lock=24" alt="Bunny Chow from South Africa">
+            <figcaption>Bunny Chow - South Africa</figcaption>
+          </figure>
+          <div class="card-body">
+            <p>A Durban curry served inside a hollowed-out loaf of bread.</p>
+            <div class="card-buttons">
+              <a href="bunny-chow.html" class="btn small-btn">View recipe</a>
+              <button type="button" class="fav-btn" data-id="bunny-chow">🤍 Favorite</button>
+            </div>
+          </div>
+        </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-soft">
+      <div class="container">
+        <h2>Explore by Region</h2>
+        <p class="subtitle">African food changes from region to region. Pick one to explore.</p>
+        <div class="grid">
+        <a href="west-africa.html" class="card region-card">
+          <figure>
+            <img src="https://loremflickr.com/800/600/west,africa,market?lock=31" alt="Food market in West Africa">
+            <figcaption>West Africa</figcaption>
+          </figure>
+          <div class="card-body"><p>Bold, spicy cooking built around rice, yam and stews.</p></div>
+        </a>
+        <a href="north-africa.html" class="card region-card">
+          <figure>
+            <img src="https://loremflickr.com/800/600/moroccan,market,spices?lock=32" alt="Food market in North Africa">
+            <figcaption>North Africa</figcaption>
+          </figure>
+          <div class="card-body"><p>Fragrant spices, couscous and slow-cooked clay pot dishes.</p></div>
+        </a>
+        <a href="east-africa.html" class="card region-card">
+          <figure>
+            <img src="https://loremflickr.com/800/600/ethiopia,food,market?lock=33" alt="Food market in East Africa">
+            <figcaption>East Africa</figcaption>
+          </figure>
+          <div class="card-body"><p>Shared platters, fermented breads and coastal spices.</p></div>
+        </a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>Latest Food Trends</h2>
+        <div class="grid">
+        <article class="trend">
+          <h3>Teff and ancient grains are going global</h3>
+          <p>Gluten-free <mark>teff</mark>, fonio and sorghum are showing up in cafes and supermarkets around the world.</p>
+        </article>
+        <article class="trend">
+          <h3>Plant-based African cooking</h3>
+          <p>Dishes made with <mark>beans, groundnuts and leafy greens</mark> are becoming popular as naturally vegan comfort food.</p>
+        </article>
+        <article class="trend">
+          <h3>Jollof goes gourmet</h3>
+          <p>Chefs are trying jollof with smoked peppers, seafood and new <mark>spice blends</mark>.</p>
+        </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <h3>Taste of Africa</h3>
+        <p>Celebrating the food, spices and stories of Africa.</p>
+      </div>
+      <div>
+        <h3>Links</h3>
+        <p><a href="recipes.html">Recipes</a><br><a href="about.html">About us</a><br><a href="contact.html">Contact</a></p>
+      </div>
+      <div>
+        <h3>Newsletter</h3>
+        <form id="newsletter-form" class="newsletter">
+          <label for="newsletter-email" style="display:none">Email</label>
+          <input type="email" id="newsletter-email" placeholder="Your email" required>
+          <button type="submit" class="btn">Join</button>
+        </form>
+        <p id="newsletter-message"></p>
+      </div>
+    </div>
+    <p class="copyright">&copy; 2026 Taste of Africa - a student project</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

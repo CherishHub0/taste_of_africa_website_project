@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Isombe | Taste of Africa</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container nav-bar">
+      <a href="index.html" class="logo">Taste of Africa</a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li class="dropdown">
+            <a href="west-africa.html">Regions &#9662;</a>
+            <ul class="dropdown-menu">
+            <li><a href="west-africa.html">West Africa</a></li>
+            <li><a href="north-africa.html">North Africa</a></li>
+            <li><a href="east-africa.html">East Africa</a></li>
+            <li><a href="southern-africa.html">Southern Africa</a></li>
+            </ul>
+          </li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><button id="dark-btn" type="button">Dark mode</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-title">
+      <div class="container">
+        <h1>Isombe</h1>
+        <p>Rwanda - <a href="east-africa.html">East Africa</a></p>
+      </div>
+    </div>
+
+    <section>
+      <div class="container two-columns">
+        <figure style="margin:0">
+          <img src="https://loremflickr.com/800/600/cassava,leaves,stew?lock=25" alt="A plate of Isombe" class="recipe-img">
+          <figcaption>Photo: Isombe</figcaption>
+        </figure>
+        <div>
+          <h2>About this dish</h2>
+          <p>Isombe is a favorite Rwandan dish made with <mark>cassava leaves</mark>, eggplant and <mark>ground peanuts</mark> that make the sauce thick and creamy. It is usually eaten with rice, boiled potatoes or ugali. Cassava leaves must always be cooked well before eating.</p>
+          <button type="button" class="fav-btn" data-id="isombe">🤍 Favorite</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-soft">
+      <div class="container two-columns">
+        <div class="box">
+          <h2>Ingredients</h2>
+          <div class="servings">
+            <button type="button" id="minus">-</button>
+            <span id="servings-text">4 servings</span>
+            <button type="button" id="plus">+</button>
+          </div>
+          <ul class="ingredients">
+            <li><span class="amount" data-amount="500">500</span> g cassava leaves (or kale)</li>
+            <li><span class="amount" data-amount="1">1</span> eggplant, cubed</li>
+            <li><span class="amount" data-amount="3">3</span> green onions</li>
+            <li><span class="amount" data-amount="1">1</span> green pepper</li>
+            <li><span class="amount" data-amount="2">2</span> cloves garlic</li>
+            <li><span class="amount" data-amount="0.25">0.25</span> cup peanut butter</li>
+            <li><span class="amount" data-amount="2">2</span> tbsp palm or vegetable oil</li>
+            <li><span class="amount" data-amount="2">2</span> cups water</li>
+            <li>Salt to taste</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Cooking instructions</h2>
+          <details>
+            <summary>Step 1: Preparation</summary>
+            <ol>
+              <li>Wash the cassava leaves and chop them small.</li>
+              <li>Boil the leaves in water for 20 minutes, then drain.</li>
+            </ol>
+          </details>
+          <details>
+            <summary>Step 2: Cooking</summary>
+            <ol>
+              <li>Heat the oil and cook the green onions, green pepper and garlic until soft.</li>
+              <li>Add the leaves, eggplant and water, cover and simmer for 30 minutes.</li>
+              <li>Stir in the peanut butter and cook for 10 more minutes.</li>
+              <li>Add salt and serve hot with rice or potatoes.</li>
+            </ol>
+          </details>
+          <div class="box">
+            <table>
+              <caption><strong>Nutrition facts (approximate, per serving)</strong></caption>
+              <thead>
+                <tr><th>Nutrient</th><th>Amount</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Calories</td><td>260 kcal</td></tr>
+                <tr><td>Protein</td><td>9 g</td></tr>
+                <tr><td>Carbohydrates</td><td>22 g</td></tr>
+                <tr><td>Fat</td><td>16 g</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container two-columns">
+        <div>
+          <h2>Video tutorial</h2>
+          <div class="video-box">
+          <iframe src="https://www.youtube.com/embed/9srQN_fU1uI" title="How to cook Isombe" allowfullscreen></iframe>
+        </div>
+        </div>
+        <div>
+          <h2>Where it comes from: Rwanda</h2>
+          <div class="map-box">
+          <iframe src="https://www.google.com/maps?q=Rwanda&output=embed" title="Map of Rwanda"></iframe>
+        </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <h3>Taste of Africa</h3>
+        <p>Celebrating the food, spices and stories of Africa.</p>
+      </div>
+      <div>
+        <h3>Links</h3>
+        <p><a href="recipes.html">Recipes</a><br><a href="about.html">About us</a><br><a href="contact.html">Contact</a></p>
+      </div>
+      <div>
+        <h3>Newsletter</h3>
+        <form id="newsletter-form" class="newsletter">
+          <label for="newsletter-email" style="display:none">Email</label>
+          <input type="email" id="newsletter-email" placeholder="Your email" required>
+          <button type="submit" class="btn">Join</button>
+        </form>
+        <p id="newsletter-message"></p>
+      </div>
+    </div>
+    <p class="copyright">&copy; 2026 Taste of Africa - a student project</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
