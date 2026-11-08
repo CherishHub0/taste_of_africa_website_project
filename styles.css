@@ -204,8 +204,9 @@ nav a:hover {
   align-items: center;
   color: white;
   /* dark overlay on top of the background image */
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url('https://loremflickr.com/1600/900/african,food?lock=11') center / cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+  url('images/hero.jpg') center / cover,
+  linear-gradient(135deg, #7c2d12, #e8590c);
 }
 
 .hero-content {
